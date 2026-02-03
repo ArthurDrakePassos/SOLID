@@ -1,0 +1,19 @@
+﻿ISP - Interface Segregation Principle (Principio da Segregação de Interfaces)
+
+Muitas interfaces específicas são melhores do que uma interface única e geral.
+
+Uma interface não deve forçar uma classe a implementar funcionalidades que ela não irá utilizar.
+
+- Interfaces que tem muitos comportamentos se espalham pelo sistema trazendo complexidade e dificuldade de manutenção ao código.
+
+- Como as classes as interfaces não devem ser genéricas e sim ter uma responsábilidade única.
+
+Objetivos: 
+
+- Reduzir os efeitos colaterais e frequência das alterações desnecessárias, dividindo o software em várias partes independentes.
+
+- Obter um baixo acoplamento.
+
+- Ter interfaces focadas em sua responsabilidade.
+
+- Reduzir as dependências no código.

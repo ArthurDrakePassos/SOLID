@@ -1,0 +1,10 @@
+﻿Srp - Single Responsability Principle (Princípio da Responsabilidade Única)
+
+Cada classe deve ter apenas um motivo para mudar
+Cada classe deve ter apenas uma responsabilidade a ser cumprida
+
+- Única responsabilidade
+- Classes menores
+- Fáceis de manter
+- Mais fáceis de estender
+- Fáceis de testar

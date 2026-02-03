@@ -1,0 +1,9 @@
+﻿LSP - Liskov Substitution Principle (Princípio da Substituição de Liskov)
+
+Uma classe base deve poder ser substituída pela sua classe derivada sem que o comportamento final seja alterado.
+
+Algumas Violações LSP:
+
+- Implementações vazias e que não fazem nada em métodos da classe derivada.
+- Lançar uma exceção em um método da classe derivada que não é lançada na classe base.
+- Classes derivadas que substituem(override) métodos da classe base e dão a ele um comportamento completamente novo.

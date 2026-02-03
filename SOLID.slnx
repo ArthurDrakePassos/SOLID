@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="LSP/LSP.csproj" />
+  <Project Path="OCP/OCP.csproj" />
+  <Project Path="SRP/SRP.csproj" />
+</Solution>

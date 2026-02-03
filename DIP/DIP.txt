@@ -1,0 +1,11 @@
+﻿DIP - Dependency Inversion Principle (Princípio da Inversão de Dependência)
+
+Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de uma abstração.
+
+Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
+
+"Programe para uma interface, não para uma implementação."
+
+Objetivo é desacoplar o código, facilitando a manutenção, testes e evolução do sistema. 
+Mantendo o foco da tarefa de design do negócio, deixando este design independente ou desacoplado do componente que vai executar as tarefas de baixo nível.
+

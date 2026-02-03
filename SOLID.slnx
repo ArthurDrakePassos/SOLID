@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="DIP/DIP.csproj" Id="d0aaf751-19d5-4b3c-b506-e041bfde8bc3" />
+  <Project Path="Exercicios/Exercicios.csproj" Id="c0dc7214-987b-4603-a9e1-92c2eac371ca" />
   <Project Path="ISP/ISP.csproj" Id="b7b886e6-615c-4b8c-8b2e-1cb4d4cf1412" />
   <Project Path="LSP/LSP.csproj" />
   <Project Path="OCP/OCP.csproj" />

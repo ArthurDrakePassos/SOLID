@@ -23,7 +23,7 @@ namespace SRP.Violacao
             catch (Exception ex)
             {
                 //Gravar log de erro
-                File.WriteAllText(@"c:/dados/log.txt", ex.ToString());
+                File.WriteAllText(@"c:\dados\log.txt", ex.ToString());
             }
         }
 
@@ -36,7 +36,7 @@ namespace SRP.Violacao
             catch (Exception ex)
             {
                 //Gravar log de erro
-                File.WriteAllText(@"c:/dados/log.txt", ex.ToString());
+                File.WriteAllText(@"c:\dados\log.txt", ex.ToString());
             }
         }
 
@@ -49,7 +49,7 @@ namespace SRP.Violacao
             catch (Exception ex)
             {
                 //Gravar log de erro
-                File.WriteAllText(@"c:/dados/log.txt", ex.ToString());
+                File.WriteAllText(@"c:\dados\log.txt", ex.ToString());
             }
         }
     }

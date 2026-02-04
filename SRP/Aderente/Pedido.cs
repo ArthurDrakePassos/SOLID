@@ -29,7 +29,7 @@
             }
             catch (Exception ex)
             {
-                _logger.GravaLog("Erro ao incluir pedido: " + ex.ToString());
+                _logger.GravaLog($"Erro ao incluir pedido: {ex.ToString()}");
             }
         }
 
@@ -43,7 +43,7 @@
             catch (Exception ex)
             {
                 //Gravar log de erro
-                _logger.GravaLog("Erro ao deletar pedido: " + ex.ToString());
+                _logger.GravaLog($"Erro ao deletar pedido: {ex.ToString()}");
             }
         }
     }

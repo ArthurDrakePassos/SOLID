@@ -1,0 +1,102 @@
+﻿1) Quais os principais tipos de relacionamentos podemos ter entre as classes e qual a principal vantagem eles oferecem?
+
+- Agregação: Relacionamento "Tem um". Tipo de associação onde um objeto precisa ser complementado por outro. Ex: Turma - Professor, turma tem um professor vinculado, mas se a turma deixar de existir, o professor pode continuar existindo.
+- Composição: Relacionamento "Tem um". Vinculo forte entre duas classes, uma classe "parte" não faz sentido existir sem o "todo". Ex: Escola - Departamento, se escola não existir não faz sentido departamento existir também.
+- Herança: Relacionamento "É um". Uma classe filha herda os membros da classe pai.
+
+2) Descreva as regras usadas para definir os principais tipos de relacionamentos entre as classes.
+
+É um: expressa um relacionamento de herança. 
+Ex: Carro é um veículo
+
+Tem um: expressa um relacionamento de composição ou agregação. 
+Ex: Carro tem motor (composição)
+Time tem jogador (agregação)
+
+3) Qual a diferença entre herança e composição?
+
+Herança: 
+- Estende atributos e métodos de uma classe.
+- Classe pai/classe base/superclasse é a classe que foi herdada.
+- Classe filha/subclasse é classe que herdou.
+- Generalização: Obtém similaridades entre classes e define novas classes. As classes mais genéricas são as classes Pai.
+- Especialização: Identifica atributos e métodos não correspondentes entre classes distintas colocando-os na classe filha.
+- Usa regra "É um".
+
+Composição:
+- Estende uma classe e delega o trabalho para o objeto desta classe.
+- Uma instância da classe existente é usada como componente da outra classe.
+- As partes que compõem são essenciais e sem elas o objeto não existe.
+- Usa a regra "Tem um".
+
+4) Quais as vantagens em usar composição sobre a herança?
+
+Usando herança:
+- Violamos um dos pilares da orientação a objetos: o encapsulamento, pois os detalhes da implementação da classe Pai são expostos nas classes Filhas.
+- Violamos um dos princípios básicos das boas práticas de programação: manter o acoplamento entre as classes fraco, visto que as classes filhas estão fortemente acopladas à classe pai, e alterar uma classe pai pode afetar todas as classes filhas.
+- As implementações herdadas da classe pai pelas classes filhas não podem ser alteradas em tempo de execução.
+
+Usando composição:
+- Os objetos que foram instanciados e estão contidos na classe que os instanciou são acessados somente através de sua interface.
+- A composição pode ser definida dinamicamente em tempo de execução pela obtenção de referência de objetos a objetos do mesmo tipo.
+- A composição apresenta menor dependência de implementações.
+- Na composição temos cada classe focada em apenas uma tarefa (SRP)
+- Na composição temos um bom encapsulamento visto que os detalhes internos dos objetos instanciados não são visíveis.
+
+5) Qual a diferença entre composição e agregação?
+
+- Tem relação com a existência dos objetos, e é apenas conceitual.
+- Tanto a composição como a agregação são associações que representam uma relação TODO-PARTE.
+
+Composição:
+- Parte não existe sem o todo
+Ex: Carro tem motor (Se objeto todo "carro" não existir, a parte "motor" não faz sentido)
+
+Agregação:
+- A parte existe independente do todo
+Ex: Turma e aluno (Se objeto todo "turma" não existir, a parte "aluno" pode continuar existindo)
+
+6) Qual a diferença entre interface e classe abstrata?
+
+Classe Abstrata:
+- É uma classe que não pode ser instanciada
+- Pode ser herdada e geralmente serve como classe base para outras classes.
+- Pode conter métodos abstratos e métodos comuns.
+- Pode possuir construtores, propriedades, indexadores e eventos.
+- Não pode ser estática (static). Não pode ser selada (sealed).
+- Pode herdar de outra classe abstrata.
+
+Interface:
+- Contém somente a assinatura dos métodos sem implementação.
+- Todos os membros são públicos.
+- Não pode ser instanciada.
+- Uma classe pode implementar mais de uma interface.
+- Não pode conter construtor.
+- Quando uma classe herda de uma interface ela tem que implementar todos os métodos da interface.
+
+7) O que é o acoplamento entre classes? Dê um exemplo e explique.
+
+- Acoplamento é o nível de dependência/conhecimento que pode existir entre as classes.
+- Uma classe com acoplamento fraco não é dependente de muitas classes para fazer o que ele tem que fazer.
+- Uma classe com acoplamento forte depende de muitas outras classes para fazer o seu serviço.
+- Uma classe com acoplamento forte é mais difícil de manter, de entender e de ser reusada.
+
+Exemplo:
+
+public class a
+{
+	private B _b;
+	
+	public A()
+	{
+		_b = new B();
+	}
+}
+
+Neste exemplo temos um forte acoplamento entre a classe A e a classe B, pois quem controle a criação de uma instância da classe B é a classe A.
+Qualquer alteração na classe B vai afetar diretamente a classe A.
+
+8) O que é polimorfismo?
+
+- É um princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma das classes derivadas.
+- Podemos obter o polimorfismo usando herança e também a sobrecarga de métodos.

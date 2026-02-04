@@ -5,7 +5,7 @@
         public void GravaLog(string info)
         {
             //Gravar log de erro
-            File.WriteAllText(@"c:/dados/log.txt", info);
+            File.WriteAllText(@"c:\dados\log.txt", info);
         }
     }
 }
